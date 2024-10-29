@@ -5,6 +5,7 @@
 }
 
 body{
+  color: white;
   font-family: Arial, Helvetica, sans-serif
 }
 
@@ -20,7 +21,7 @@ body{
   flex-direction: column;
 }
 
-.groug{
+.grow{
   flex-grow: 1;
 }
 
@@ -40,10 +41,10 @@ body{
   text-align: center;
 }
 
-.debug{
+/* .debug{
   background-color: rgba(255, 0, 0, .2);
   border: 1px solid black;
-}
+} */
 
 li{
   list-style: none;
@@ -62,6 +63,7 @@ li{
 }
 
 main .hamburger{
+  background-color: black;
   width: 200px;
   height: 100%;
   overflow: auto;
@@ -72,12 +74,14 @@ main .hamburger::-webkit-scrollbar {
 }
 
 main .main{
+  background-color: #141922;
   width: calc(100% - 200px);
   height: 100%;
   overflow: auto;
 }
 
 .container-upgrade{
+  background-color: #080B12;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -93,7 +97,7 @@ img{
 }
 
 footer{
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: #282828;
   height: 100px;
 }
 
