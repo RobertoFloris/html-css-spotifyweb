@@ -1,0 +1,35 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.debug{
+  background-color: rgba(255, 0, 0, .2);
+  border: 1px solid black;
+}
+
+.row{
+  display: flex;
+  height: 100%;
+}
+
+.container{
+  height: calc(100vh - 100px);
+}
+
+main .container .col:first-child{
+  width: 20%;
+  height: 100%;
+}
+
+main .container .col:last-child{
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+}
+
+footer{
+  background-color: rgba(0, 255, 0, 0.5);
+  height: 100px;
+}
