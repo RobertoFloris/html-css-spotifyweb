@@ -17,6 +17,10 @@ body{
   justify-content: center;
 }
 
+.justify-end{
+  justify-content: end;
+}
+
 .align-center{
   align-items: center;
 }
@@ -70,7 +74,7 @@ li{
 }
 
 .homelist img{
-  width: 40px;
+  width: 30px;
   vertical-align: middle
 }
 
@@ -81,6 +85,10 @@ span strong{
 .user img{
   width: 20px;
   vertical-align: middle
+}
+
+.inline{
+  display: inline-block ;
 }
 
 .mt-30{
@@ -106,7 +114,6 @@ main .hamburger{
   background-color: black;
   width: 200px;
   height: 100%;
-  overflow: auto;
 }
 
 .hamburger a{
@@ -121,9 +128,7 @@ h4{
   color: white;
 }
 
-main .hamburger::-webkit-scrollbar {
-  display: none;
-}
+
 
 main .main{
   background-color: #141922;
@@ -132,9 +137,13 @@ main .main{
   overflow: auto;
 }
 
+.playlist.homelist{
+  overflow: auto;
+}
+
 .container-upgrade{
   position: fixed;
-  width: calc(100% - 200px);
+  width: calc(100% - 217px);
   opacity: 0.8;
   background-color: #080B12;
   display: flex;
@@ -179,6 +188,20 @@ footer{
   background-color: #282828;
   height: 100px;
 }
+
+footer .img-in-play{
+  height: 50px;
+  width: 50px;
+}
+
+footer .row .col:first-child{
+  width: 400px;
+}
+
+footer .row .col:last-child{
+  width: 400px;
+}
+
 
 @media screen and (max-width: 1100px) {
   section .col{
