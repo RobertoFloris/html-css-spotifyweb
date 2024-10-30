@@ -17,6 +17,14 @@ body{
   justify-content: center;
 }
 
+.align-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
 .direction-column{
   flex-direction: column;
 }
@@ -62,7 +70,16 @@ li{
 }
 
 .homelist img{
-  width: 20%;
+  width: 40px;
+  vertical-align: middle
+}
+
+span strong{
+  color: white;
+}
+
+.user img{
+  width: 20px;
   vertical-align: middle
 }
 
@@ -177,11 +194,21 @@ footer{
 
 @media screen and (max-width: 600px) {
   main .hamburger{
-    width: 50px;
+    width: 80px;
+  }
+
+  main .hamburger span, .playlist{
+    display: none;
   }
 
   main .main, .container-upgrade{
-    width: calc(100% - 50px);
+    width: calc(100% - 80px);
   }
+
+  .homelist{
+    flex-grow: 1;
+  }
+
+  
 }
 
