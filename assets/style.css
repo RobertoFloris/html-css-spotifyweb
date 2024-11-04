@@ -80,7 +80,24 @@ li{
 }
 
 .toplist li{
+  cursor: pointer;
   padding: 10px 5px;
+}
+
+.toplist li hr{
+  width: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-color: #ADFF2F;
+  display: none;
+}
+
+.toplist li:hover{
+  color: #A3A3A3;
+}
+
+.toplist li:hover hr{
+  display: block;
 }
 
 .homelist li{
@@ -183,6 +200,7 @@ main .main{
   align-items: center;
   justify-content: end;
   height: 80px;
+  z-index: 100;
 }
 
 a{
@@ -205,16 +223,13 @@ img{
   width: 100%;
 }
 
-.toplist li{
-  cursor: pointer;
-}
-
-.toplist li:hover{
-  color: #A3A3A3;
-}
-
 .popular img{
   border-radius: 50%;
+}
+
+i:hover{
+  cursor: pointer;
+  color: #A3A3A3;
 }
 
 .logo img{
