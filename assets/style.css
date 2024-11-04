@@ -121,6 +121,10 @@ span strong{
   vertical-align: middle
 }
 
+#logosmall{
+  display: none;
+}
+
 .fa-solid.fa-plus{
   padding: 10px;
   color: black;
@@ -201,6 +205,14 @@ img{
   width: 100%;
 }
 
+.toplist li{
+  cursor: pointer;
+}
+
+.toplist li:hover{
+  color: #A3A3A3;
+}
+
 .popular img{
   border-radius: 50%;
 }
@@ -213,8 +225,33 @@ img{
   margin-top: 20px;
 }
 
+.card{
+  position: relative;
+}
+
+.card .img{
+  position: relative;
+}
+
 .card:hover{
   cursor: pointer;
+}
+
+.card .img:hover img {
+  opacity: 0.5; 
+}
+
+.card .fa-circle-play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  display: none;
+}
+
+.card .img:hover .fa-circle-play{
+  display: block;
 }
 
 footer{
@@ -256,6 +293,10 @@ footer .hr.play{
   border-radius: 25px;
 }
 
+footer #brano{
+  font-size: 0.8rem;
+}
+
 footer .hr.play .percentuale{
   width: 70%;
   height: 100%;
@@ -285,6 +326,15 @@ footer .col.play .fa-solid, footer .col.play .fa-regular{
 }
 
 @media screen and (max-width: 600px) {
+
+  #logosmall{
+    display: block;
+  }
+
+  #normallogo{
+    display: none;
+  }
+
   main .hamburger{
     width: 80px;
   }
@@ -301,6 +351,17 @@ footer .col.play .fa-solid, footer .col.play .fa-regular{
     flex-grow: 1;
   }
 
+  .homelist img {
+    width: 100%
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .user img{
+    width: 100%;
+  }
   
 }
 
