@@ -13,6 +13,8 @@
   <main>
     <div class="container">
       <div class="row h-100">
+
+        <!-- hamburger menu -->
         <div class="col d-flex direction-column hamburger p-20">
 
           <div class="logo">
@@ -20,6 +22,7 @@
             <a href=""><img id="logosmall" src="./assets/img/logo-small.svg" alt="Logo"></a>
           </div>
 
+          <!-- lista cliccabile home,search,libreria -->
           <div class="homelist">
             <ul>
               <li><a href="#"><hr><img src="./assets/img/home.svg" alt="home" class="gray"><span> Home</span></a></li>
@@ -28,6 +31,7 @@
             </ul>
           </div>
 
+          <!-- crea playlist -->
           <div class="playlist mt-30 mb-30">
             <div>
               <h4>
@@ -39,6 +43,7 @@
             </div>
           </div>
 
+          <!-- lista di playlist già create -->
           <div class="playlist homelist grow">
             <ul class="d-flex direction-column">
               <li><a href="">Nome Playlist</a></li>
@@ -52,6 +57,7 @@
             </ul>
           </div>
 
+          <!-- footer hamburger -->
           <div class="user mt-30">
             <a href="#"><img src="./assets/img/download.svg" alt="download" class="gray"><span> Installa app</span></a>
             <hr>
@@ -62,14 +68,17 @@
           </div>
         </div>
 
+        <!-- content -->
         <div class="col main ">
 
+          <!-- button upgrade sempre visibile in alto nonostante lo scroll -->
           <div class="container-upgrade ">
            <a class="button" href="#">Effettua l'upgrade</a>
           </div>
 
           <div class="mt-80">
 
+            <!-- lista cliccabile main -->
             <section class="toplist">
               <ul class="d-flex justify-center wrap">
                 <li>IN EVIDENZA <hr></li>
@@ -81,6 +90,7 @@
               </ul>
             </section>
 
+            <!-- card ascoltate di recente -->
             <section class="recently">
 
               <div>
@@ -182,6 +192,7 @@
 
             </section>
 
+            <!-- card for you -->
             <section class="created">
               <div>
                 <h2 class="p-20">Creato per John Doe</h2>
@@ -217,6 +228,7 @@
                   </div>
             </section>
 
+            <!-- card artisti più popolari -->
             <section class="popular">
               <div>
                 <h2 class="p-20">Artisti più popolari</h2>
@@ -255,8 +267,12 @@
       </div>
     </div>
   </main>
+
+  <!-- footer con brano in riproduzione -->
   <footer>
     <div class="row justify-between align-center h-100 p-20">
+
+      <!-- brano in riproduzione -->
       <div class="col d-flex align-center">
         <div class="img-in-play">
           <img src="./assets/img/sinister.jpeg" alt="">
@@ -270,6 +286,8 @@
           <span class="p-10"><i class="fa-regular fa-folder"></i></span>
         </div>
       </div>
+
+      <!-- barra tempo brano -->
       <div class="col play mb-20">
         <div class="d-flex align-center">
           <span><i class="fa-solid fa-shuffle"></i></span>
@@ -286,8 +304,9 @@
           </div>
           <span class="ml-10">4:35</span>
         </div>
-        
       </div>
+
+      <!-- barra audio -->
       <div class="col">
         <div class="d-flex align-center justify-end">
           <span><i class="p-10 fa-solid fa-list"></i> </span>
