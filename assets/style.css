@@ -84,6 +84,19 @@ li{
   padding: 10px 5px;
 }
 
+.homelist hr{
+  display: none;
+  width: 1px;
+  height: 20px;
+  transform: translateY(50%);
+  border-color: #ADFF2F;
+}
+
+.homelist a:hover hr{
+  display: inline-block;
+}
+
+
 .toplist li hr{
   width: 30px;
   margin-left: 50%;
